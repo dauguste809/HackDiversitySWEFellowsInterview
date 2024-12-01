@@ -1,0 +1,22 @@
+Accessible routes sorted by distance:
+{'id': '2', 'from': 'Entrance', 'to': 'Restroom', 'accessible': True, 'distance': 50}
+{'id': '24', 'from': 'Restroom', 'to': 'Lobby', 'accessible': True, 'distance': 65}
+{'id': '4', 'from': 'Restroom', 'to': 'Gift Shop', 'accessible': True, 'distance': 70}
+{'id': '22', 'from': 'Lobby', 'to': 'Gift Shop', 'accessible': True, 'distance': 75}
+{'id': '15', 'from': 'Gift Shop', 'to': 'Exit', 'accessible': True, 'distance': 95}
+{'id': '27', 'from': 'Gift Shop', 'to': 'Cafeteria', 'accessible': True, 'distance': 110}
+{'id': '18', 'from': 'Exhibit D', 'to': 'Cafeteria', 'accessible': True, 'distance': 120}
+{'id': '10', 'from': 'Exhibit C', 'to': 'Restroom', 'accessible': True, 'distance': 130}
+{'id': '1', 'from': 'Entrance', 'to': 'Exhibit A', 'accessible': True, 'distance': 150}
+{'id': '7', 'from': 'Exhibit B', 'to': 'Exit', 'accessible': True, 'distance': 150}
+{'id': '21', 'from': 'Lobby', 'to': 'Exhibit A', 'accessible': True, 'distance': 160}
+{'id': '8', 'from': 'Cafeteria', 'to': 'Restroom', 'accessible': True, 'distance': 180}
+{'id': '30', 'from': 'Lobby', 'to': 'Exit', 'accessible': True, 'distance': 180}
+{'id': '20', 'from': 'Cafeteria', 'to': 'Exhibit C', 'accessible': True, 'distance': 190}
+{'id': '13', 'from': 'Cafeteria', 'to': 'Entrance', 'accessible': True, 'distance': 240}
+{'id': '14', 'from': 'Exhibit C', 'to': 'Exit', 'accessible': True, 'distance': 275}
+{'id': '26', 'from': 'Exhibit B', 'to': 'Lobby', 'accessible': True, 'distance': 290}
+{'id': '5', 'from': 'Cafeteria', 'to': 'Exhibit B', 'accessible': True, 'distance': 300}
+{'id': '29', 'from': 'Exhibit A', 'to': 'Exhibit D', 'accessible': True, 'distance': 320}
+{'id': '16', 'from': 'Entrance', 'to': 'Exhibit D', 'accessible': True, 'distance': 430}
+{'id': '11', 'from': 'Entrance', 'to': 'Exhibit C', 'accessible': True, 'distance': 500}
