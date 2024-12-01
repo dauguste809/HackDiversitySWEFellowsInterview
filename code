@@ -26,3 +26,25 @@ def bubble_sort(routes, key):
             if routes[j][key] > routes[j + 1][key]:
                 routes[j], routes[j + 1] = routes[j + 1], routes[j]  # Swap
     return routes
+
+if __name__ == "__main__":
+    #Setting API paths
+    API_URL = "https://hackdiversity.xyz/api/navigation/routes"  
+    SESSION_ID = "3db85ec3-78f9-48fa-8f09-93f7b5b916cf" 
+
+    #Retrieving possible routes 
+    routes = get_routes_from_api(API_URL, SESSION_ID)
+    if not routes:
+        print("No routes retrieved.")
+        exit()
+
+    #Linear search to find accessible routes 
+    accessible_routes = linear_search(routes, lambda r: r["accessible"])
+
+    #Bubble sort to sort accessible routes by distance
+    sorted_routes = bubble_sort(accessible_routes, key="distance")
+
+    #Print sorted routes 
+    print("Accessible routes sorted by distance:")
+    for route in sorted_routes:
+        print(route)
