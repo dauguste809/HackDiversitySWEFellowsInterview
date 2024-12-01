@@ -1,0 +1,7 @@
+def linear_search(routes, condition):
+    #Filters routes using linear search based on condition
+    filtered_routes = []
+    for route in routes:
+        if condition(route):
+            filtered_routes.append(route)
+    return filtered_routes
