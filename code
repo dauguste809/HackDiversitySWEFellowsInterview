@@ -1,3 +1,15 @@
+import requests
+
+def get_routes_from_api(api_url, session_id):
+    #Makes a list of routes from API
+    headers = { "Authorization": f"Bearer {session_id}"}
+    response = requests.get(api_url, headers=headers)
+    if response.status_code == 200:
+        return response.json()  # Since the API returns JSON data
+    else:
+        print(f"Error fetching routes: {response.status_code} - {response.text}")
+        return []
+
 def linear_search(routes, condition):
     #Filters routes using linear search based on condition
     filtered_routes = []
@@ -5,6 +17,7 @@ def linear_search(routes, condition):
         if condition(route):
             filtered_routes.append(route)
     return filtered_routes
+
 def bubble_sort(routes, key):
     #Sorts routes using bubble sort based on key.
     n = len(routes)
