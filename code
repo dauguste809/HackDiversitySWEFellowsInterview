@@ -5,3 +5,11 @@ def linear_search(routes, condition):
         if condition(route):
             filtered_routes.append(route)
     return filtered_routes
+def bubble_sort(routes, key):
+    #Sorts routes using bubble sort based on key.
+    n = len(routes)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if routes[j][key] > routes[j + 1][key]:
+                routes[j], routes[j + 1] = routes[j + 1], routes[j]  # Swap
+    return routes
